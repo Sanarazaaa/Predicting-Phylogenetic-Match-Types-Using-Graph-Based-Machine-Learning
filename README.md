@@ -1,10 +1,7 @@
 # Predicting-Phylogenetic-Match-Types-Using-Graph-Based-Machine-Learning
 
-
 ## Project Summary
 This project predicts the type of relationship between species in a phylogenetic dataset using a network-based machine learning approach. Species are represented as nodes in a graph, and edges correspond to observed matches. By combining network features (degree, betweenness, closeness) with species name similarity and genus information, a Random Forest classifier predicts edge types, handling class imbalance with SMOTE and balanced class weights. This approach demonstrates a unique intersection of phylogenetics, network analysis, and machine learning.
-
----
 
 ## Dataset
 The dataset contains species pairs and their match types:
@@ -19,8 +16,6 @@ The dataset contains species pairs and their match types:
 - The dataset is **imbalanced**, with the majority class (`1BL to 1BT`) dominating.
 
 <img width="247" height="136" alt="image" src="https://github.com/user-attachments/assets/d66d5587-b7c7-4c8b-a4d2-4a19f9547abe" />
-
----
 
 ## Methodology
 
@@ -43,9 +38,6 @@ The dataset contains species pairs and their match types:
    - Evaluation metrics: precision, recall, F1-score  
    - Feature importance analyzed to understand key predictors
 
----
-
-
 **Feature Importance:**
 - `lev_sim` (string similarity): 0.242  
 - `clos_v` (closeness centrality of node v): 0.227  
@@ -54,14 +46,10 @@ The dataset contains species pairs and their match types:
 - `bet_u`, `bet_v`: 0.011, 0.002  
 - `genus_same`: 0.038  
 
----
-
 ## Key Takeaways
 - Achieves **high overall accuracy (~92%)**, though minority classes require attention.  
 - String similarity and closeness centrality are the most predictive features.  
 - Shows how **network analysis and ML** can complement phylogenetic studies.  
-
----
 
 ## Technologies
 - Python 3  
