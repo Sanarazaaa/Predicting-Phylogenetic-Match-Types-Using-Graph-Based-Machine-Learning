@@ -46,11 +46,6 @@ The dataset contains species pairs and their match types:
 - `bet_u`, `bet_v`: 0.011, 0.002  
 - `genus_same`: 0.038  
 
-## Key Takeaways
-- Achieves **high overall accuracy (~92%)**, though minority classes require attention.  
-- String similarity and closeness centrality are the most predictive features.  
-- Shows how **network analysis and ML** can complement phylogenetic studies.  
-
 ## Technologies
 - Python 3  
 - pandas, networkx, scikit-learn, imbalanced-learn  
